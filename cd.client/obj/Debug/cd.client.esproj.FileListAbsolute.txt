@@ -1,0 +1,2 @@
+D:\光潤\CD\cd.client\obj\Debug\cd.client.esproj.CoreCompileInputs.cache
+D:\CD\CD\cd.client\obj\Debug\cd.client.esproj.CoreCompileInputs.cache

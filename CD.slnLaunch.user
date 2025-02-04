@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "新增設定檔",
+    "Projects": [
+      {
+        "Path": "CD.Server\\CD.Server.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "cd.client\\cd.client.esproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

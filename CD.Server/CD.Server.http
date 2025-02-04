@@ -1,0 +1,6 @@
+@CD.Server_HostAddress = http://localhost:5041
+
+GET {{CD.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
