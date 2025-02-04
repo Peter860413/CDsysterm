@@ -50,7 +50,7 @@ const target = env.ASPNETCORE_HTTPS_PORT
 // 👉 **優化 Vite 設定**
 export default defineConfig({
     plugins: [react()], // 🔥 移除重複的 `plugin()`
-    base,
+    base: "/CDsysterm/",
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))
@@ -64,12 +64,7 @@ export default defineConfig({
             }
         },
         port: 61037,
-        https: !isProduction // 🔥 只有開發環境使用 HTTPS，生產環境不啟用
-            ? {
-                key: fs.readFileSync(certFilePath),
-                cert: fs.readFileSync(certFilePath),
-            }
-            : false
+        https: false
     },
     build: {
         outDir: 'dist',
