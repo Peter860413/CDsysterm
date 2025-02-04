@@ -14,7 +14,7 @@ function Plans() {
                 <h1>智慧型手機</h1>
 
                 <div className="product-image">
-                    <img src="/images/iphone.png" alt="智慧手機" />
+                    <img src="/CDsysterm/images/iphone.png" alt="智慧手機" />
                 </div>
 
                 <h2>產品介紹</h2>

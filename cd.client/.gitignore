@@ -23,3 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 .vs/*
+**/bin/
+**/obj/
+*.exe
+*.dill
+*.pdb
+*.user
