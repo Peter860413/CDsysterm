@@ -16,6 +16,8 @@ import Suppliers from './Routes/Suppliers';
 import Plans from './Routes/Plans';
 import Layout from './Layout';
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
@@ -57,15 +59,15 @@ root.render(
     <React.StrictMode>
         <Router>
             <Routes>
-                <Route path="/" element={<Layout />}>
+                <Route path="/CDsysterm/" element={<Layout />}>
                 {/* 設定路由 */}
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/suppliers" element={<Suppliers />} />
-                    <Route path="/plans" element={<Plans />} />
+                    <Route path="/CDsysterm/home" element={<Home />} />
+                    <Route path="/CDsysterm/about" element={<About />} />
+                    <Route path="/CDsysterm/suppliers" element={<Suppliers />} />
+                    <Route path="/CDsysterm/plans" element={<Plans />} />
                     {/* 404介面 */}
                     <Route path="*" element={<h1>404 Page Not Found</h1>} />
-            </Route>
+                </Route>                
             </Routes>
         </Router>
     </React.StrictMode>

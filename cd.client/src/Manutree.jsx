@@ -44,8 +44,8 @@ function Menutree() {
         <div id='leftmenu'>
             <nav id='menutree'>
                 <ul>
-                    <li><Link to="/home">🏠 首頁</Link></li>
-                    <li><Link to="/about">🏢 關於公司</Link></li>
+                    <li><Link to="/CDsysterm/home">🏠 首頁</Link></li>
+                    <li><Link to="/CDsysterm/about">🏢 關於公司</Link></li>
 
                     {/* 合作計畫 - 可展開 */}
                     <li>
@@ -54,12 +54,12 @@ function Menutree() {
                         </button>
                         <ul className={`submenu ${openMenu.plans ? "open" : ""}`}>
                             <li>
-                                <Link to="/plans?planId=plan1" className={activeItem === 'plan1' ? 'active' : ''}>
+                                <Link to="/CDsysterm/plans?planId=plan1" className={activeItem === 'plan1' ? 'active' : ''}>
                                     智慧型手機
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/plans?planId=plan2" className={activeItem === 'plan2' ? 'active' : ''}>
+                                <Link to="/CDsysterm/plans?planId=plan2" className={activeItem === 'plan2' ? 'active' : ''}>
                                     計畫 B
                                 </Link>
                             </li>
@@ -73,17 +73,17 @@ function Menutree() {
                         </button>
                         <ul className={`submenu ${openMenu.suppliers ? "open" : ""}`}>
                             <li>
-                                <Link to="/suppliers?supId=supplier-apple" className={activeItem === 'supplier-apple' ? 'active' : ''}>
+                                <Link to="/CDsysterm/suppliers?supId=supplier-apple" className={activeItem === 'supplier-apple' ? 'active' : ''}>
                                     阿祺木頭
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/suppliers?supId=supplier-samsung" className={activeItem === 'supplier-samsung' ? 'active' : ''}>
+                                <Link to="/CDsysterm/suppliers?supId=supplier-samsung" className={activeItem === 'supplier-samsung' ? 'active' : ''}>
                                     八寶鋼鐵
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/suppliers?supId=supplier-google" className={activeItem === 'supplier-google' ? 'active' : ''}>
+                                <Link to="/CDsysterm/suppliers?supId=supplier-google" className={activeItem === 'supplier-google' ? 'active' : ''}>
                                     凱文塑膠
                                 </Link>
                             </li>

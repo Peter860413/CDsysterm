@@ -8,15 +8,13 @@ function Plans() {
     const [planData, setPlanData] = useState(null);
 
     return (
-        <div className="plans-container">
+        <div className="content-container">
             {/* 中間內容區塊 */}
             <section className="content-area">
                 <h1>智慧型手機</h1>
-
-                <div className="product-image">
+                <div className="plans-image">
                     <img src="/CDsysterm/images/iphone.png" alt="智慧手機" />
                 </div>
-
                 <h2>產品介紹</h2>
                 <p>
                     這是一款高效能的智慧手機，搭載最新的處理器，提供卓越的使用體驗。
@@ -44,7 +42,7 @@ function Plans() {
                     <li>Huawei Technologies</li>
                 </ul>
 
-                <button className="manufacturing-btn">參與製造</button>
+                <button className="manufacturing-btn">參與製造</button>                
             </aside>
         </div>
     );

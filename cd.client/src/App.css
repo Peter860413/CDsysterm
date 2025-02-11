@@ -22,6 +22,7 @@ a {
 /********** [ 主要佈局 ] **********/
 
 /* 頁首區塊 */
+
 div#header_wrap {
     background-color: #4c9479;
     margin: 0;
@@ -80,22 +81,33 @@ div#leftmenu {
     z-index: 500;
 }
 
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 305px;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    z-index: 600;
+}
+
 /********** [ 內容區塊 ] **********/
 
-/* Plans 主要容器 */
-.plans-container {
+/*主要容器 */
+.content-container {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     margin-left: 211px;
-    max-width: 1200px;
     width: calc(100% - 211px - 311px);
 }
 
 /* 主要內容區塊 */
 .content-area {
     flex: 1;
-    max-width: 800px;
+    width: calc(100% - 211px - 311px);
 }
 
     .content-area h1 {
@@ -105,20 +117,32 @@ div#leftmenu {
     }
 
 /* 產品圖片區塊 */
-.product-image {
+.plans-image {
     display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    height: 400px; /* 固定區塊高度 */
     background-color: #f8f8f8;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
+    width: 50%; /* 讓區塊滿版 */
+    text-align: center; /* 讓內部內容（如圖片）對齊 */
+    margin-bottom: 20px;
 }
 
-    .product-image img {
-        max-height: 75%;
+    /* 圖片 - 保持比例並且完全置中 */
+    .plans-image img {
         max-width: 100%;
-        object-fit: contain;
+        max-height: 100%;
+        object-fit: contain; /* 確保圖片完整顯示 */
+        display: block;
     }
+.home-image {
+    max-height: 500px; /* 限制最大高度 */
+    width: 100%; /* 讓圖片填滿父容器 */
+    object-fit: cover; /* 保持圖片比例並填滿 */
+    border-radius: 10px; /* 圓角讓設計更柔和（可選） */
+    margin-bottom: 20px;
+    display: block;
+}
 
 /********** [ 選單區塊 ] **********/
 

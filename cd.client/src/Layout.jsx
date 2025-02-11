@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import './App.css';
 import Menutree from './Manutree';
+
 function Layout() {
     return (      
         <div>
@@ -15,6 +16,9 @@ function Layout() {
             <main>
                   <Outlet />
             </main>
+            <footer className="footer">
+                <small>© 2025 企業管理系統. 版權所有.</small>
+            </footer>
         </div>      
     );
 }
