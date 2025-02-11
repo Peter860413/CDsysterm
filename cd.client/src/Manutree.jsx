@@ -44,7 +44,7 @@ function Menutree() {
         <div id='leftmenu'>
             <nav id='menutree'>
                 <ul>
-                    <li><Link to="/CDsysterm/home">🏠 首頁</Link></li>
+                    <li><Link to="/CDsysterm/">🏠 首頁</Link></li>
                     <li><Link to="/CDsysterm/about">🏢 關於公司</Link></li>
 
                     {/* 合作計畫 - 可展開 */}
