@@ -59,7 +59,7 @@ root.render(
     <React.StrictMode>
         <Router>
             <Routes>
-                <Route path="/CDsysterm/" element={<Layout />}>
+                <Route path="/" element={<Layout />}>
                 {/* 設定路由 */}
                     <Route path="/CDsysterm/home" element={<Home />} />
                     <Route path="/CDsysterm/about" element={<About />} />
