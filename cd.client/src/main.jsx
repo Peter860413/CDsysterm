@@ -61,7 +61,7 @@ root.render(
             <Routes>
                 <Route path="/" element={<Layout />}>
                 {/* 設定路由 */}
-                    <Route path="/CDsysterm/home" element={<Home />} />
+                    <Route path="/CDsysterm/" element={<Home />} />
                     <Route path="/CDsysterm/about" element={<About />} />
                     <Route path="/CDsysterm/suppliers" element={<Suppliers />} />
                     <Route path="/CDsysterm/plans" element={<Plans />} />
